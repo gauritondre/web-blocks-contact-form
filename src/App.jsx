@@ -1,22 +1,24 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import ContactForm from "./components/ContactForm";
+import "./index.css";
+import bgimage from "./public/bgimage.png";
+// import bgimage from "/bgimage.png";
 
 function App() {
   return (
-    <div className="contact-form-container">
-      <form className="form">
-        <h2>Get into the Conversation</h2>
-        <div className="input-row">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-        </div>
-        <div className="input-row">
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Phone Number" />
-        </div>
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <div className="app-container">
+
+      <img src={bgimage} alt="3D rotating planet" className="background-image" />
+
+      <div className="left-panel">
+        <ContactForm />
+      </div>
+      <div className="right-panel">
+        
+        {/* <img src={bgimage} alt="3D rotating planet" /> */}
+
+
+      </div>
     </div>
   );
 }
